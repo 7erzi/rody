@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rody</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-gray-50 flex flex-col sm:flex-row">
+
+    <!-- Sidebar -->
+    <div class="sidebar-bg w-full sm:w-80 min-h-screen flex flex-col items-center py-8 px-6 sm:fixed sm:left-0 sm:top-0">
+        <!-- Profile Image -->
+        <div class="mb-6">
+            <img src="../img/SAVE____-removebg-preview.png" 
+                 alt="Rody" 
+                 class="profile-img w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-full">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="w-full">
+            <ul class="space-y-2 text-center sm:text-left">
+                <li><a href="#" class="nav-link block text-black font-medium text-lg hover:text-white" data-section="home">🎂 Birthday</a></li>
+                <li><a href="#" class="nav-link block text-black font-medium text-lg hover:text-white active" data-section="about">About Rody</a></li>
+                <li><a href="#" class="nav-link block text-black font-medium text-lg hover:text-white" data-section="portfolio">📸 Memories</a></li>
+                <li><a href="#" class="nav-link block text-black font-medium text-lg hover:text-white" data-section="testimonials">💖 Why I Love U</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 sm:ml-80 min-h-screen p-6 sm:p-12">
+        <!-- HOME Content -->
+        <div id="home-content" class="content-section hidden text-center py-20">
+            <div class="text-6xl sm:text-8xl mb-6">❤️🎉</div>
+            <p class="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+أذكر يوم تعرفت عليك بـ 30 يوليو في التيك توك، والله ما توقعت إن صدفة صغيرة تصير سبب إني ألقى أعز وأجمل صاحب. من وقتها وإحنا سوالف وضحك وذكريات ما تنسى. رودي، إنت مو أي صاحب، إنت أخ غالي على قلبي وأفتخر فيك دايم. وعلشان كذا، قررت أسوي لك شي يليق فيك كهدية. هذي هديتي البسيطة، وأرسلها لك بهالمناسبة الغالية، يوم ميلادك 23 أغسطس. كل سنة وإنت بخير يا بسـتو، وربي يديمك لي دايم
+            </p>
+        </div>
+
+        <!-- ABOUT Content -->
+        <div id="about-content" class="content-section hidden flex justify-center items-center min-h-screen">
+            <section class="bg-white p-4 sm:p-6 rounded-xl max-w-md text-right">
+                <p class="leading-relaxed text-sm sm:text-lg font-[Tajawal]">
+                    <strong>الاسم:</strong> رافد علي<br>
+                    <strong>العمر:</strong> 15 سنة<br>
+                    <strong>تاريخ الميلاد:</strong> 23 / 08 / 2010<br>
+                    <strong>من:</strong> العراق<br>
+                    <strong>الشخصية (MBTI):</strong> ISFP<br>
+                    <strong>الهوايات:</strong> لعب الألعاب، الركض، الشطرنج، كرة القدم<br>
+                    <strong>الألوان المفضلة:</strong> البنفسجي<br>
+                    <strong>الفواكه المفضلة:</strong> البرتقال، الرمان<br>
+                    <strong>المشروب المفضل:</strong> الكوكتيل<br>
+                    <strong>الأنمي المفضل:</strong> بلاك كلوفر، ناروتو، هنتر × هنتر<br><br>
+                    رافد مو مجرد صديق، هو أعز صديق عندي...
+                </p>
+            </section>
+        </div>
+
+        <!-- PORTFOLIO Content -->
+        <div id="portfolio-content" class="content-section hidden">
+            <header class="mb-8 text-center sm:text-left">
+                <h1 class="text-3xl sm:text-5xl font-bold text-black mb-6">OUR MOMENTS</h1>
+            </header>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="../img/IMG-20250821-WA0001.jpg">
+                <img src="../img/IMG-20250821-WA0004.jpg">
+                <img src="../img/IMG-20250821-WA0006.jpg">
+                <img src="../img/IMG-20250821-WA0005.jpg">
+                <img src="../img/IMG-20250821-WA0007.jpg">
+                <img src="../img/IMG-20250821-WA0008.jpg">
+                <img src="../img/IMG-20250821-WA0009.jpg">
+                <img src="../img/IMG-20250821-WA0010.jpg">
+                <img src="../img/IMG-20250821-WA0011.jpg">
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS Content -->
+        <div id="testimonials-content" class="content-section hidden flex justify-center items-center min-h-screen">
+            <section class="bg-white p-4 sm:p-6 rounded-xl shadow-lg max-w-3xl text-right font-[Tajawal]">
+                <p class="text-gray-700 leading-relaxed text-sm sm:text-lg">
+رودي، أحبك لأنك دائمًا موجود لي في كل لحظة، تضيف الضحك والفرحة حتى في أبسط الأيام، وتخلي كل شيء حوالينا ممتع ومليان طاقة إيجابية. أحب طيبتك وصدقك وحنانك، وحسك المضحك اللي يقدر يخفف عني أي ضيق أو زعل. أحب اهتمامك بالأشياء اللي تحبها، كل تفاصيلك تميزك وتجعل وجودك في حياتي شيء لا يقدّر بثمن.<br><br> أحب طريقة تفكيرك وكيف تفهمني بدون ما أتكلم، وكيف دايمًا تعرف الكلمات اللي تريحني أو تخليني أضحك. أحب ذكرياتنا الصغيرة والكبيرة، من السوالف الطويلة والمواقف المضحكة إلى اللحظات الهادئة اللي نقضيها سوا. وجودك في حياتي يعني لي الكثير، أنت مو بس صديق، أنت أخ وصديق حقيقي أفتخر فيه وأدعيلك دايمًا بكل الخير.<br><br> أحب شغفك وحبك للحياة، طريقتك في اكتشاف الأشياء الجديدة والمغامرات اللي دايمًا تخلق ذكريات ما تنسى. كل يوم أقضيه معك يزيدني فخر وامتنان لصداقتنا، وكل لحظة نقضيها مع بعض مليانة ضحك وفرح وحب صادق. واليوم صار لي أحلى صديق في حياتي، وأتمنى لك كل السعادة والفرح اللي تستاهلها، لأنه وجودك يجعل كل شيء أفضل، وأنا ممتنة لوجودك في حياتي أكثر من أي كلام ممكن يوصف.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="../js/animation.js"></script>
+</body>
+</html>
